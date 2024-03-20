@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { TiThMenu } from "react-icons/ti";
+import { useState } from 'react';
+import Image from './componnts/Image';
 function App() {
+  const[update , setpdate] = useState(false);
+  const[updateNavbar , setUpadteNavbar] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Image/>
+    
+
+    </>
+    
   );
 }
 
